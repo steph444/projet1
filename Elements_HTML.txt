@@ -1,0 +1,48 @@
+L'appel des éléments HTML à partir d'un script 
+Chaque langage de script obéit à ses propres règles pour appeler des objets HTML à partir d'un script. Cette spécification ne définit pas de mécanisme standard pour appeler les objets HTML.
+
+Néanmoins, les scripts devraient se référer à un élément en fonction du nom qui lui est assigné. Les moteurs de scripts devraient observer les règles de préséance suivantes dans l'identification d'un élément : l'attribut name est prioritaire sur l'attribut id, quand tous les deux sont spécifiés. Sinon, on peut utiliser l'un ou l'autre.
+
+18.2.3 Les événements intrinsèques
+Remarque : Les auteurs de documents HTML sont prévenus que des changements vont vraisemblablement intervenir dans le domaine des événements intrinsèques (par exemple, la manière dont les scripts sont rattachés aux événements. Les recherches dans ce domaine sont menées par les membres du groupe de travail sur le modèle objet de document du W3C (voir le site Web du W3C à http://www.w3.org/ pour plus de renseignements).
+
+Définition des attributs
+
+onload = script [CT]
+L'événement onload se produit quand l'agent utilisateur finit de charger une fenêtre ou bien tous les cadres dans un jeu d'encadrement FRAMESET. Cet attribut peut s'utiliser avec les éléments BODY et FRAMESET.
+onunload = script [CT]
+L'événement onunload se produit quand l'agent utilisateur retire le document d'une fenêtre ou d'un cadre. Cet attribut peut s'utiliser avec les éléments BODY et FRAMESET.
+onclick = script [CT]
+L'événement onclick se produit quand le bouton du dispositif de pointage est cliqué au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+ondblclick = script [CT]
+L'événement ondblclick se produit quand le bouton du dispositif de pointage est double-cliqué au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onmousedown = script [CT]
+L'événement onmousedown se produit quand le bouton du dispositif de pointage est appuyé au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onmouseup = script [CT]
+L'événement onmouseup se produit quand le bouton du dispositif de pointage est relâché au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onmouseover = script [CT]
+L'événement onmouseover se produit quand le dispositif de pointage est déplacé sur un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onmousemove = script [CT]
+L'événement onmousemove se produit quand le dispositif de pointage est déplacé alors qu'il est au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onmouseout = script [CT]
+L'événement onmouseout se produit quand le dispositif de pointabe est déplacé en dehors d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onfocus = script [CT]
+L'événement onfocus se produit quand un élément reçoit l'attention, soit par le biais du dispositif de pointage, soit au travers d'une navigation par tabulation. Cet attribut peut s'utiliser avec les éléments suivants : A, AREA, LABEL, INPUT, SELECT, TEXTAREA et BUTTON.
+onblur = script [CT]
+L'événement onblur se produit quand un élément perd l'attention, soit par le biais du dispositif de pointage, soit au travers d'une navigation par tabulation. On peut l'utiliser avec les mêmes éléments que l'événement onfocus.
+onkeypress = script [CT]
+L'événement onkeypress se produit quand une touche est pressée puis relâchée au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onkeydown = script [CT]
+L'événement onkeydown se produit quand une touche est gardée appuyée au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onkeyup = script [CT]
+L'événement onkeyup se produit quand une touche est relâchée au-dessus d'un élément. Cet attribut peut s'utiliser avec la plupart des éléments.
+onsubmit = script [CT]
+L'événement onsubmit se produit quand un formulaire est soumis. Il ne s'applique qu'à l'élément FORM.
+onreset = script [CT]
+L'événement onreset se produit quand un formulaire est réinitialisé. Il ne s'applique qu'à l'élément FORM.
+onselect = script [CT]
+L'événement onselect se produit quand l'utilisateur sélectionne un certain texte dans un champs textuel. Cet attribut peut s'utiliser avec les éléments INPUT et TEXTAREA.
+onchange = script [CT]
+L'événement onchange se produit quand une commande perd l'attention de saisie et quand sa valeur a été modifiée depuis l'instant où elle avait reçu l'attention. Cet attribut s'applique aux éléments suivants : INPUT, SELECT et TEXTAREA.
+Il est possible d'associer une action à un certain nombre d'événements, qui se produisent quand l'utilisateur interagit avec l'agent utilisateur. Chacun des « événements intrinsèques » listés ci-dessus prend comme valeur un script. Le script s'exécute toutes les fois où l'événement se produit pour cet élément. La syntaxe des données de script dépend du langage de script.
+
